@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	
-<!-- Mirrored from wegodesign.net/wego-theme-themeforest-html-template/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Sep 2016 17:13:52 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+	
 	<head>
 		<title>@yield('title')</title>
 
@@ -18,15 +18,7 @@
 		<!--/ favicon -->
 		
 		<!-- styles -->
-		<link rel="stylesheet" href="{{ asset('assets/css/font-awesome.css') }}">
-		<link rel="stylesheet" href="{{ asset('assets/css/jquery.fancybox.css') }}">
-		<link rel="stylesheet" href="{{ asset('assets/css/jquery.owl.carousel.css') }}">
-		<link rel="stylesheet" href="{{ asset('assets/js/rs-plugin/css/settings.css') }}">
-		<link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
-		<!--/ styles -->
-		
-		<link rel="stylesheet" href="{{ asset('assets/css/photoswipe.css') }}">
-		<link rel="stylesheet" href="{{ asset('assets/css/default-skin/default-skin.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset(elixir('css/style.css')) }}">
 
 		@yield('styles')
 	</head>
@@ -41,34 +33,9 @@
 
 		</div>
 
-		<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
-		<script src="{{ asset('assets/js/jquery-ui.min.js') }}"></script>
-		<script src="{{ asset('assets/js/jquery.counter.js') }}"></script>
-		<script src="{{ asset('assets/js/jquery.knob.min.js') }}"></script>
-		<script src="{{ asset('assets/js/jquery.form.min.js') }}"></script>
-		<script src="{{ asset('assets/js/jquery.isotope.min.js') }}"></script>
-		<script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
-		<script src="{{ asset('assets/js/jquery.countdown.min.js') }}"></script>
-		<script src="{{ asset('assets/js/jquery.fancybox.pack.js') }}"></script>
-		<script src="{{ asset('assets/js/jquery.fancybox-media.js') }}"></script>
-		<script src="{{ asset('assets/js/jquery.imagesloaded.min.js') }}"></script>
-		<script src="{{ asset('assets/js/jquery.owl.carousel.min.js') }}"></script>
-		<script src="{{ asset('assets/js/rs-plugin/js/jquery.themepunch.tools.min.js') }}"></script>
-		<script src="{{ asset('assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js') }}"></script>	
-		<!--[if lt IE 10]><script src="js/jquery.placeholder.min.js"></script><![endif]-->
-		<script src="{{ asset('assets/js/main.js') }}"></script>
+
 		<!--/ scripts -->
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCboicx4wx9FUw2-I7uNgfk3701y2U4Ujw"></script>
-
-		<!-- tuner -->
-		<link rel="stylesheet" href="{{ asset('assets/tuner/css/main.css') }}">
-		<link rel="stylesheet" href="{{ asset('assets/tuner/css/colorpicker.css') }}">
-		<script src="{{ asset('assets/tuner/js/main.js') }}"></script>
-		<script src="{{ asset('assets/tuner/js/colorpicker.js') }}"></script>
-		<!-- gallery -->
-		<script src="{{ asset('assets/js/photoswipe.min.js') }}"></script>
-		<script src="{{ asset('assets/js/photoswipe-ui-default.min.js') }}"></script>
 
 		<script type="text/javascript">
 			var openPhotoSwipe = function(){
@@ -104,6 +71,8 @@
 			
 		</script>
 
+		{{-- scrips --}}
+		<script type="text/javascript" src="{{ asset(elixir('js/app.js')) }}"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				initializeStaticMap();

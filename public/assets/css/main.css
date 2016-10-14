@@ -218,7 +218,7 @@ html, body {
 	color: #808b8d;
 }
 body {
-	background: #fff url(../img/patterns/item-1.png);
+	background: #fff url(../../assets/img/patterns/item-1.png);
 	opacity: 0;
 	transition: opacity 0.3s;
 }
@@ -1747,11 +1747,11 @@ noindex:-o-prefocus, .main-nav { /* opera hack */
 	display: block;
 	width: 70px;
 	height: 12px;
-	background: url(../img/rating.png);
+	background: url(../../assetsimg/rating.png);
 }
 .rating div {
 	height: 12px;
-	background: url(../img/rating.png) 0 -12px;	
+	background: url(../../assetsimg/rating.png) 0 -12px;	
 }
 
 
@@ -4367,7 +4367,7 @@ noindex:-o-prefocus, .main-nav { /* opera hack */
 .block-portfolio-5 .rating i {
 	display: block;
 	height: 12px;
-	background: url(../img/rating.png) 0 -12px;	
+	background: url(../../assets/img/rating.png) 0 -12px;	
 }
 .block-portfolio-5 .button {
 	padding: 0 20px;
