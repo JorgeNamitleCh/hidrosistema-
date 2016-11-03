@@ -27,40 +27,25 @@
 			<a href="#" class="switcher">Menu<i class="fa fa-bars"></i></a>
 			<ul>
 				<li class="active">
-					<a href="index.html">INICIO</a>
+					<a href="{{ url('/') }}">INICIO</a>
 				</li>							
 				<li>
 					<a href="#">NOSOTROS<i class="fa fa-angle-down"></i></a>
 					<ul>
-						<li><a href="#">FILOSOFÍA INSTITUCIONAL</a></li>
-						<li><a href="#">ANTECEDENTES</a></li>
-						<li><a href="#">MEDIDOR</a></li>
-						<li><a href="#">HISTORIA</a></li>
-						<li><a href="#">ORGANIGRAMA</a></li>
-						<li><a href="#">DIRECTORIO</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">INFORMACIÓN<i class="fa fa-angle-down"></i></a>
-					<ul>
-						<li><a href="#">TARIFA 2016</a></li>
-						<li><a href="#">RECIBO</a></li>
-						<li><a href="#">MEDIDOR</a></li>
-						<li><a href="#">DONDE PAGAR</a></li>
-						<li><a href="#">INFORMACIÓN FISCAL</a></li>
+						<li><a href="{{ url('we/philosophy') }}">FILOSOFÍA INSTITUCIONAL</a></li>
+						<li><a href="{{ url('we/record') }}">ANTECEDENTES</a></li>
+						<li><a href="{{ url('we/history') }}">HISTORIA</a></li>
+						<li><a href="{{ url('we/record') }}">ORGANIGRAMA</a></li>
+						<li><a href="{{ url('we/directory') }}">DIRECTORIO</a></li>
 					</ul>
 				</li>
 				<li>
 					<a href="#">SERVICIOS<i class="fa fa-angle-down"></i></a>
 					<ul>
-						<li><a href="#">CONTRATACIÓN</a></li>
-						<li><a href="#">ACTUALIZACIÓN</a></li>
-						<li><a href="#">REUBICACIÓN</a></li>
-						<li><a href="#">BAJA</a></li>
-						<li><a href="#">PAGO ANUAL ANTICIPADO</a></li>
-						<li><a href="#">SERVICIO DE LABORATORIO</a></li>
-						<li><a href="#">PADRÓN DE PROVEEDORES</a></li>
-						<li><a href="#">FACTIBILIDADES</a></li>
+						<li><a href="#">SERVICIOS</a></li>
+						<li><a href="{{ url('services/formalities') }}">TRAMITES</a></li>
+						<li><a href="{{ url('services/information') }}">INFORMACIÓN</a></li>
+						<li><a href="#">LABORATORIO</a></li>
 					</ul>
 				</li>
 				<li>
