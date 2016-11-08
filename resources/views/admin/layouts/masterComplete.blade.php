@@ -16,16 +16,24 @@
 		<!-- favicon -->
 		<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 		<!--/ favicon -->
-		
-		<!-- styles -->
-		
-		
 		<link rel="stylesheet" type="text/css" href="{{ asset(elixir('css/style.css')) }}">
-		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/admin1.css') }}">
-		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/elements.css') }}">
+		<!-- Bootstrap core CSS -->
+	    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+	    <!-- Material Design Bootstrap -->
+	    <link href="{{ asset('assets/css/mdb.css') }}" rel="stylesheet">
+	    <!-- Your custom styles (optional) -->
+	    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+	    <!-- styles -->
+		{{-- <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/elements.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/admin1.css') }}"> --}}
+		
+
+		
+		
+		
 		<!-- Latest compiled and minified CSS -->
 		
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
 
 		@yield('styles')
 	</head>
@@ -79,11 +87,25 @@
 		</script>
 
 		{{-- scrips --}}
-		<script type="text/javascript" src="{{ asset(elixir('js/app.js')) }}"></script>
+
+
+	    <!-- JQuery -->
+	    <script type="text/javascript" src="{{ asset('assets/js/jquery-3.1.1.min.js') }}"></script>
+
+	    <!-- Bootstrap tooltips -->
+	    <script type="text/javascript" src="{{ asset('assets/js/tether.min.js') }}"></script>
+
+	    <!-- Bootstrap core JavaScript -->
+	    <script type="text/javascript" src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+
+	    <!-- MDB core JavaScript -->
+	    <script type="text/javascript" src="{{ asset('assets/js/mdb.min.js') }}"></script>
+
+	    <script type="text/javascript" src="{{ asset(elixir('js/app.js')) }}"></script>
 
 	
 		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 		<script type="text/javascript">
 			$(document).ready(function(){
 				initializeStaticMap();

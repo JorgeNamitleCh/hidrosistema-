@@ -3,12 +3,12 @@
 @section('title', 'Hidrosistema | Información')
 
 @section('styles')
-	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style_cards.css') }}">
+
     @parent
 @stop
 
 @section('scrips')
-	<script type="text/javascript" src="{{ asset('assets/js/index_cards.js') }}"></script>
+	
 @stop
 @section('content')
 	<!-- page intro -->
@@ -26,80 +26,128 @@
 	<div class="page-content-section">
 		<div class="grid-row">
 			<div class="col-md-4">
-				<main id="container">
-					  
-					  <div class="img-wrapper">
-					      <img src="{{ asset('assets/pic/backgrounds/factura.png') }}" alt="Just Background">
-					  </div>
-					  <p class="detail">Click the Button to see the "Material Animation". Works great on modern browser.</p>
-
-					  <div class="button-wrapper">
-					      <div class="layer"></div>
-					      <button class="main-button fa fa-info">
-					          <div class="ripple"></div>
-					      </button>
-					  </div>
-
-					  <div class="layered-content">
-					      <button class="close-button fa fa-times"></button>
-					      <div class="content">
-					          <img src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/111167/profile/profile-512_4.jpg" alt="Balapa">
-					          <p>Crafted by balapa.</p>
-					          <p>See also my <a href="http://codepen.io/balapa/details/gbQbXR/">other pen</a></p>
-					      </div>
-					  </div>
-				</main>
-			</div><!-- col-md-4 -->
+			    <!--Card-->
+			    <div class="card card-cascade narrower">
+			        <!--Card image-->
+			        <div class="view overlay hm-white-slight">
+			            <img src="{{ asset('assets/pic/backgrounds/factura.png') }}" class="img-fluid" alt="">
+			            <a>
+			                <div class="mask"></div>
+			            </a>
+			        </div>
+			        <!--/.Card image-->
+			        <!--Card content-->
+			        <div class="card-block">
+			            <h5 class="red-text"><i class="fa fa-file"></i> Factura</h5>
+			            <!--Title-->
+			            <h4 class="card-title">Ingresa a nuestro portal!</h4>
+			            <!--Text-->
+			            <p class="card-text">Orgullosos de servirte, puedes bajar tu factura electronica desde nuestro portal.</p>
+			            <a class="btn btn-primary">Ingresa</a>
+			        </div>
+			        <!--/.Card content-->
+			    </div>
+			    <!--/.Card-->
+			</div>
 			<div class="col-md-4">
-				<main id="container">
-					  
-					  <div class="img-wrapper">
-					      <img src="{{ asset('assets/pic/backgrounds/consulta.png') }}" alt="Just Background">
-					  </div>
-					  <p class="detail">Click the Button to see the "Material Animation". Works great on modern browser.</p>
-
-					  <div class="button-wrapper">
-					      <div class="layer"></div>
-					      <button class="main-button fa fa-info">
-					          <div class="ripple"></div>
-					      </button>
-					  </div>
-
-					  <div class="layered-content">
-					      <button class="close-button fa fa-times"></button>
-					      <div class="content">
-					          <img src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/111167/profile/profile-512_4.jpg" alt="Balapa">
-					          <p>Crafted by balapa.</p>
-					          <p>See also my <a href="http://codepen.io/balapa/details/gbQbXR/">other pen</a></p>
-					      </div>
-					  </div>
-				</main>
-			</div><!-- col-md-4 -->
+			    <!--Card-->
+			    <div class="card card-cascade narrower">
+			        <!--Card image-->
+			        <div class="view overlay hm-white-slight">
+			            <img src="{{ asset('assets/pic/backgrounds/saldo.png') }}" class="img-fluid" alt="">
+			            <a>
+			                <div class="mask"></div>
+			            </a>
+			        </div>
+			        <!--/.Card image-->
+			        <!--Card content-->
+			        <div class="card-block">
+			            <h5 class="red-text"><i class="fa fa-search"></i> Saldo Actual</h5>
+			            <!--Title-->
+			            <h4 class="card-title">Ingresa a nuestro portal!</h4>
+			            <!--Text-->
+			            <p class="card-text">Orgullosos de servirte, ya puedes consultar tu saldo al día, solo ingresa y registrate.</p>
+			            <a class="btn btn-primary">Ingresa</a>
+			        </div>
+			        <!--/.Card content-->
+			    </div>
+			    <!--/.Card-->
+			</div>
 			<div class="col-md-4">
-				<main id="container">
-					  
-					  <div class="img-wrapper">
-					      <img src="{{ asset('assets/pic/backgrounds/saldo.png') }}" alt="Just Background">
-					  </div>
-					  <p class="detail">Click the Button to see the "Material Animation". Works great on modern browser.</p>
+			    <!--Card-->
+			    <div class="card card-cascade narrower">
+			        <!--Card image-->
+			        <div class="view overlay hm-white-slight">
+			            <img src="{{ asset('assets/pic/backgrounds/consulta.png') }}" class="img-fluid" alt="">
+			            <a>
+			                <div class="mask"></div>
+			            </a>
+			        </div>
+			        <!--/.Card image-->
+			        <!--Card content-->
+			        <div class="card-block">
+			            <h5 class="red-text"><i class="fa fa-cloud-download"></i> Recibo</h5>
+			            <!--Title-->
+			            <h4 class="card-title">Ingresa a nuestro portal!</h4>
+			            <!--Text-->
+			            <p class="card-text">Orgullosos de servirte, descarga tu recibo y paga en los establecimientos autorizados.</p>
+			            <a class="btn btn-primary">Ingresa</a>
+			        </div>
+			        <!--/.Card content-->
+			    </div>
+			    <!--/.Card-->
+			</div>
+		</div><!-- grid-row -->
 
-					  <div class="button-wrapper">
-					      <div class="layer"></div>
-					      <button class="main-button fa fa-info">
-					          <div class="ripple"></div>
-					      </button>
-					  </div>
-
-					  <div class="layered-content">
-					      <button class="close-button fa fa-times"></button>
-					      <div class="content">
-					          <img src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/111167/profile/profile-512_4.jpg" alt="Balapa">
-					          <p>Crafted by balapa.</p>
-					          <p>See also my <a href="http://codepen.io/balapa/details/gbQbXR/">other pen</a></p>
-					      </div>
-					  </div>
-				</main>
-			</div><!-- col-md-4 -->
+		<div class="grid-row">
+			<div class="col-md-6">
+			    <!--Card-->
+			    <div class="card card-cascade narrower">
+			        <!--Card image-->
+			        <div class="view overlay hm-white-slight">
+			            <img src="{{ asset('assets/pic/backgrounds/consumo.png') }}" class="img-fluid" alt="">
+			            <a>
+			                <div class="mask"></div>
+			            </a>
+			        </div>
+			        <!--/.Card image-->
+			        <!--Card content-->
+			        <div class="card-block">
+			            <h5 class="red-text"><i class="fa fa-bars" aria-hidden="true"></i> Consumos</h5>
+			            <!--Title-->
+			            <h4 class="card-title">Ingresa a nuestro portal!</h4>
+			            <!--Text-->
+			            <p class="card-text">Orgullosos de servirte, ya puedes consultar tus consumos, solo ingresa y registrate.</p>
+			            <a class="btn btn-primary">Ingresa</a>
+			        </div>
+			        <!--/.Card content-->
+			    </div>
+			    <!--/.Card-->
+			</div>
+			<div class="col-md-6">
+			    <!--Card-->
+			    <div class="card card-cascade narrower">
+			        <!--Card image-->
+			        <div class="view overlay hm-white-slight">
+			            <img src="{{ asset('assets/pic/backgrounds/atencion.png') }}" class="img-fluid" alt="">
+			            <a>
+			                <div class="mask"></div>
+			            </a>
+			        </div>
+			        <!--/.Card image-->
+			        <!--Card content-->
+			        <div class="card-block">
+			            <h5 class="red-text"><i class="fa fa-users"></i> Atención</h5>
+			            <!--Title-->
+			            <h4 class="card-title">Ingresa a nuestra página de atención!</h4>
+			            <!--Text-->
+			            <p class="card-text">Orgullosos de servirte, ponemos a tu disposicion una pagina de atención ciudadana.</p>
+			            <a href="http://brigadas.hidrosistema.gob.mx" class="btn btn-primary">Ingresa</a>
+			        </div>
+			        <!--/.Card content-->
+			    </div>
+			    <!--/.Card-->
+			</div>
 		</div><!-- grid-row -->
 	</div>
 	<!--/ page content section -->

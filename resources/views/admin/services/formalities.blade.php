@@ -23,151 +23,71 @@
 	<!--/ page intro -->
 	<!-- page content section -->
 	<div class="page-content-section">
+		
 		<div class="grid-row">
 			<div class="col-md-6">
-				<div class="search-results search-file">
-					<!-- Addclass "list-striped" to ul element if you want to list rows with stripe colors -->
-					<ul class="search-list list-hover">
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Requisitos de contratación - Domestico.pdf</a></h6>
-								<p class="source"><a href="#">Requisitos para la contratación del servicio de uso domestico</a></p>
-								<ul class="list-inline">
-									<li>10.1MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Requisitos de contratación - Comercial - Personas Morales.pdf</a></h6>
-								<p class="source"><a href="#">Requisitos para la contratación del servicio de uso Comercial y/o  personas Morales</a></p>
-								<ul class="list-inline">
-									<li>4.3MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Requisitos para la contratación del servicio de uso industrial.pdf</a></h6>
-								<p class="source"><a href="#">Requisitos para la contratación del servicio de uso industrial</a></p>
-								<ul class="list-inline">
-									<li>2.9MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Solicitud de cambio de nombre.pdf</h6>
-								<p class="source"><a href="#">Para cambiar el nombre del contrato del servicio</a></p>
-								<ul class="list-inline">
-									<li>5.6MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Solicitud de reubicación de toma.pdf</h6>
-								<p class="source"><a href="#">Reubicación de toma del servicio</a></p>
-								<ul class="list-inline">
-									<li>5.6MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Solicitud de baja temporal ó definitiva.pdf</h6>
-								<p class="source"><a href="#">Dar de baja el servicio de forma temporal o permanente</a></p>
-								<ul class="list-inline">
-									<li>5.6MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Inscripción al padrón de contratistas.pdf</h6>
-								<p class="source"><a href="#">Para darse de alta como contratista de hidrosistema de Córdoba</a></p>
-								<ul class="list-inline">
-									<li>5.6MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Inscripción al padrón de Proveedores.pdf</h6>
-								<p class="source"><a href="#">Para darse de alta como Proveedor de hidrosistema de Córdoba</a></p>
-								<ul class="list-inline">
-									<li>5.6MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-					</ul>
-				</div><!--.search-results-->
+				<div class="list-group"> <style type="text/css"> .fa-lg{color: #ff4444;}</style>
+				  	<a href="#" class="list-group-item">
+					    <h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg"></i> Requisitos de contratación - Domestico.pdf</h4>
+					    <p class="list-group-item-text">Requisitos para la contratación del servicio de uso domestico.</p>
+					 </a>
+				  	<a href="#" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Requisitos de contratación - Comercial.pdf</h4>
+				    	<p class="list-group-item-text">Requisitos para la contratación del servicio de uso Comercial.</p>
+				 	 </a>
+				  	<a href="#" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Requisitos para la contratación - Industrial.pdf</h4>
+				    	<p class="list-group-item-text">Requisitos para la contratación del servicio de uso industrial.</p>
+				  	</a>
+				  	<a href="#" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Solicitud de cambio de nombre.pdf</h4>
+				    	<p class="list-group-item-text"> Para cambiar el nombre del contrato del servicio.</p>
+				  	</a>
+				  	<a href="#" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Solicitud de reubicación de toma.pdf</h4>
+				    	<p class="list-group-item-text">Reubicación de toma del servicio.</p>
+				  	</a>
+				  	<a href="#" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Solicitud de baja temporal ó definitiva.pdf</h4>
+				    	<p class="list-group-item-text">Dar de baja el servicio de forma temporal o permanente.</p>
+				  	</a>
+				  	<a href="#" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Inscripción al padrón de contratistas.pdf</h4>
+				    	<p class="list-group-item-text">Para darse de alta como contratista de hidrosistema de Córdoba.</p>
+				  	</a>
+				  	<a href="#" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Inscripción al padrón de Proveedores.pdf</h4>
+				    	<p class="list-group-item-text">Para darse de alta como Proveedor de hidrosistema de Córdoba.</p>
+				  	</a>
+				</div>
 			</div>
 			<div class="col-md-6">
-				<div class="search-results search-file">
-					<!-- Addclass "list-striped" to ul element if you want to list rows with stripe colors -->
-					<ul class="search-list list-hover">
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Comite de fatibilidades.pdf</a></h6>
-								<p class="source"><a href="#">Conocenos</a></p>
-								<ul class="list-inline">
-									<li>10.1MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Requisitos Pre-factibilidades.pdf</a></h6>
-								<p class="source"><a href="#">Requisitos</a></p>
-								<ul class="list-inline">
-									<li>4.3MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Factibilidad.pdf</a></h6>
-								<p class="source"><a href="#">Factibilidades</a></p>
-								<ul class="list-inline">
-									<li>2.9MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Requisitos Factibilidad.pdf</h6>
-								<p class="source"><a href="#">Requisitos factibilidad personas Fisicas y Morales</a></p>
-								<ul class="list-inline">
-									<li>5.6MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Solicitud del tramite de factibilidad.pdf</h6>
-								<p class="source"><a href="#">Tramite de factibilidad</a></p>
-								<ul class="list-inline">
-									<li>5.6MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-					</ul>
-				</div><!--.search-results-->
-			</div>
+				<div class="list-group">
+				  	<a href="#" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Comite de fatibilidades.pdf</h4>
+				    	<p class="list-group-item-text">Conocenos.</p>
+				  	</a>
+				  	<a href="#" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Requisitos Pre-factibilidades.pdf</h4>
+				    	<p class="list-group-item-text">Requisitos.</p>
+				  	</a>
+				  	<a href="#" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Factibilidad.pdf</h4>
+				    	<p class="list-group-item-text">Factibilidades</p>
+				  	</a>
+				  	<a href="#" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Requisitos Factibilidad.pdf</h4>
+				    	<p class="list-group-item-text">Requisitos factibilidad personas Fisicas y Morales</p>
+				  	</a>
+				  	<a href="#" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Solicitud del tramite de factibilidad.pdf</h4>
+				    	<p class="list-group-item-text">ramite de factibilidad</p>
+				  	</a>
+				</div>
+			</div>	
+		</div>
+		<div class="grid-row">
+			<br><br><br>
 		</div>
 	</div>
 	<!--/ page content section -->
