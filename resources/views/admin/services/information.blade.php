@@ -25,53 +25,43 @@
 	<!-- page content section -->
 	<div class="page-content-section">
 		<div class="grid-row">
-			<div class="col-md-8">
-				<div class="search-results search-file">
-					<!-- Addclass "list-striped" to ul element if you want to list rows with stripe colors -->
-					<ul class="search-list list-hover">
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Tarifas 2016.pdf</a></h6>
-								<p class="source"><a href="#">Muestra el desglose de las tarifas</a></p>
-								<ul class="list-inline">
-									<li>10.1MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Conozca se medidor.pdf</a></h6>
-								<p class="source"><a href="#">Información refrente al medidor y toma de lecturas</a></p>
-								<ul class="list-inline">
-									<li>4.3MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Información fiscal.pdf</a></h6>
-								<p class="source"><a href="#">Informacion fiscal de Hidrosistema de Córdoba</a></p>
-								<ul class="list-inline">
-									<li>2.9MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-						<li>
-							<div class="file-icon"><a href="#"><i class="fa fa-file-pdf-o pdf"></i></a></div><!--.file-icon-->
-							<div class="search-result">
-								<h6><a href="#">Pago anual anticipado.pdf</h6>
-								<p class="source"><a href="#">Conoce el pago anual anticipado</a></p>
-								<ul class="list-inline">
-									<li>5.6MB</li>
-								</ul>
-							</div><!--.search-result-->
-						</li>
-					</ul>
-				</div><!--.search-results-->
+			<div class="col-md-6">
+				<div class="list-group">
+				  	<a href="{{ asset('storage/information/tarifas2016.pdf') }}" target="_blank" class="list-group-item"> <style type="text/css"> .fa-lg{color: #ff4444;}</style>
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Tarifas 2016.pdf</h4>
+				    	<p class="list-group-item-text">Muestra el desglose de las tarifas.</p>
+				  	</a>
+				  	<a href="{{ asset('storage/information/medidor.pdf') }}" target="_blank" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Conozca se medidor.pdf</h4>
+				    	<p class="list-group-item-text">Información refrente al medidor y toma de lecturas.</p>
+				  	</a>
+				  	<a href="{{ asset('storage/information/factibilidades.pdf') }}" target="_blank" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Factibilidad.pdf</h4>
+				    	<p class="list-group-item-text">Factibilidades</p>
+				  	</a>
+				  	<a href="{{ asset('storage/information/solicitud-factibilidad.pdf') }}" target="_blank" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Solicitud de Factibilidad.pdf</h4>
+				    	<p class="list-group-item-text">Solicitud para fatibilidad</p>
+				  	</a>
+				  	<a href="{{ asset('storage/information/rfc.pdf') }}" target="_blank" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Información fiscal.pdf</h4>
+				    	<p class="list-group-item-text">Informacion fiscal de Hidrosistema de Córdoba.</p>
+				  	</a>
+				  	<a href="{{ asset('storage/information/panticipado.pdf') }}" target="_blank" class="list-group-item">
+				    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Pago anual anticipado.pdf</h4>
+				    	<p class="list-group-item-text">Conoce el pago anual anticipado</p>
+				  	</a>
+				</div>
 			</div>
+			<div class="col-md-6">
+				<a href="{{ asset('storage/information/laboratorio.pdf') }}" target="_blank" class="list-group-item">
+			    	<h4 class="list-group-item-heading"><i class="fa fa-file-pdf-o pdf fa-lg "></i> Servicio de Laboratorio.pdf</h4>
+			    	<p class="list-group-item-text">Conoce nustro servicio.</p>
+			  	</a>
+			</div>	
+		</div>
+		<div class="grid-row">
+			<br><br><br>
 		</div>
 	</div>
 	<!--/ page content section -->

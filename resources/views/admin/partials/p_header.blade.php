@@ -42,7 +42,7 @@
 				<li>
 					<a href="#">SERVICIOS<i class="fa fa-angle-down"></i></a>
 					<ul>
-						<li><a href="#">SERVICIOS</a></li>
+						<li><a href="{{ url('services/services') }}">SERVICIOS</a></li>
 						<li><a href="{{ url('services/formalities') }}">TRAMITES</a></li>
 						<li><a href="{{ url('services/information') }}">INFORMACIÓN</a></li>
 						<li><a href="#">LABORATORIO</a></li>

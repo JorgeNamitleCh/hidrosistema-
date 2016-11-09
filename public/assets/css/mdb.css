@@ -2642,7 +2642,7 @@
 }
 
 a {
-  color: #0275d8;
+  color: #000000;
   text-decoration: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -8351,6 +8351,7 @@ footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
   background-color: #3E4551;
+  background-image: url(../pic/backgrounds/bg-azul.png);
   color: #fff;
 }
 

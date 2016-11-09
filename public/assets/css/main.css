@@ -531,7 +531,7 @@ label.error {
 }
 .page-header-bottom {
 	position: relative;
-	background: rgba(255,255,255,0.95);
+	background-image: url(../../assets/pic/backgrounds/bg-azul01.png);
 }
 .page-header-bottom > div {
 	position: relative;
@@ -574,7 +574,7 @@ noindex:-o-prefocus, .page-header-bottom + div { /* opera hack */
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: #2d3e50;
+	background-image: url(../../assets/pic/backgrounds/bg-azul01.png);
 	opacity: 0.7;
 }
 .page-intro:before {
@@ -585,7 +585,7 @@ noindex:-o-prefocus, .page-header-bottom + div { /* opera hack */
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: #2d3e50;
+	background: rgba(45, 62, 80, 0);
 	opacity: 0.7;
 }
 .page-intro .pic {
