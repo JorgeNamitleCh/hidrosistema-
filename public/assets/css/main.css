@@ -531,7 +531,8 @@ label.error {
 }
 .page-header-bottom {
 	position: relative;
-	background-image: url(../../assets/pic/backgrounds/bg-azul01.png);
+	/*background-image: url(../../assets/pic/backgrounds/bg-azul.png);*/
+	background: rgba(255,255,255,0.95);
 }
 .page-header-bottom > div {
 	position: relative;
