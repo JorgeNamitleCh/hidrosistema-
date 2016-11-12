@@ -344,8 +344,8 @@ label.error {
 }
 .button {
 	display: inline-block;
-	border: 2px solid #2d3e50;
-	background: #2d3e50;
+	border: 2px solid #6ebeea;
+    background: #bee8ff;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -526,7 +526,7 @@ label.error {
 }
 .page-header-top {
 	padding: 4px 0;
-	background: #2d3e50;
+	background: #16539e;
 	text-align: right;
 }
 .page-header-bottom {
@@ -627,7 +627,7 @@ noindex:-o-prefocus, .page-header-bottom + div { /* opera hack */
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: #2d3e50;
+	background: #10488f;
 	opacity: 0.8;
 }
 .page-content-section-bg:last-child {
@@ -1222,8 +1222,10 @@ noindex:-o-prefocus, .main-nav { /* opera hack */
     top: 100%;
     left: -9999px;
     width: 190px;
-    border-bottom: 1px rgba(0, 168, 255, 0.38);
-    background: rgba(0, 96, 152, 0.78);
+    /*border-bottom: 1px rgba(0, 168, 255, 0.38);
+    background: rgba(0, 96, 152, 0.78);*/
+    border-bottom: rgba(50, 104, 181, 0.75);
+    background: rgba(50, 104, 181, 0.75);
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -1365,8 +1367,8 @@ noindex:-o-prefocus, .main-nav { /* opera hack */
 	display: none;
 	height: 30px;
 	padding: 2px 0 0 13px;
-	border: 2px solid #2d3e50;
-	background: #2d3e50;
+	border: 2px solid #0f54a8;
+    background: #0f54a8;
 	font-size: 14px;
 	line-height: 30px;
 	text-align: left;
@@ -1485,7 +1487,7 @@ noindex:-o-prefocus, .main-nav { /* opera hack */
 	}
 	.main-nav ul {
 		display: none;
-		background: #2d3e50;
+		background: #0f54a8;
 		font-size: 16px;
 		line-height: 60px;
 	}
@@ -1971,7 +1973,7 @@ noindex:-o-prefocus, .main-nav { /* opera hack */
 	top: 0;
 	left: 0;
 	line-height: 20px;
-	color: #000;
+	color: #4285f4;
 }
 .block-apps-features img {
 	display: block;

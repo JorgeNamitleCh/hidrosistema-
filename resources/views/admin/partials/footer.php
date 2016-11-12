@@ -1,4 +1,6 @@
-<!-- page footer -->
+		<!-- page content -->
+		<div class="page-content">	
+			<!-- page footer -->
 			<footer id="page-footer" class="page-footer">
 				<div class="page-footer-pic" style="background-image: 
 				url({{ asset('assets/pic/page-footer.jpg') }})">					
