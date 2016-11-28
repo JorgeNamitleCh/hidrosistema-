@@ -31,7 +31,7 @@
 							<div class="card">
 							    <!--Card image-->
 							    <div class="view overlay hm-white-slight">
-							        <img src="{{ asset('assets/pic/backgrounds/trabajos.png') }}"class="img-fluid" alt="">
+							        <img src="{{ asset('assets/pic/backgrounds/trabajos.png') }}" class="img-fluid" alt="">
 							        <a>
 							            <div class="mask"></div>
 							        </a>

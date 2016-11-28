@@ -4552,7 +4552,7 @@ noindex:-o-prefocus, .main-nav { /* opera hack */
 	right: 2px;
 	bottom: 2px;
 	left: 2px;
-	background: #2d3e50;
+	background: rgba(0, 168, 226, 0.41);
 	opacity: 0;
 	transition: opacity 0.3s;
 }

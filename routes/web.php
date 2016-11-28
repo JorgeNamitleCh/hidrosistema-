@@ -45,3 +45,23 @@ Route::get('/services/formalities', function () {
 Route::get('/services/services', function () {
     return view('admin.services.services');
 });
+
+Route::get('/waterCulture/water', function () {
+    return view('admin.waterCulture.water');
+});
+
+Route::get('/waterCulture/history', function () {
+    return view('admin.waterCulture.history');
+});
+
+Route::get('/waterCulture/worldWaterDay', function () {
+    return view('admin.waterCulture.worldWaterDay');
+});
+
+Route::get('/waterCulture/availabilityWater', function () {
+    return view('admin.waterCulture.availabilityWater');
+});
+
+Route::get('/waterCulture/clubAquamigos', function () {
+    return view('admin.waterCulture.clubAquamigos');
+});

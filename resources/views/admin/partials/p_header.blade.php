@@ -65,14 +65,12 @@
 				<li>
 					<a href="#">CULTURA DEL AGUA<i class="fa fa-angle-down"></i></a>
 					<ul>
-						<li><a href="#">EL AGUA</a></li>
-						<li><a href="#">HISTORIA DEL AGUA EN CORDOBA</a></li>
-						<li><a href="#">DÍA MUNDIAL DEL AGUA</a></li>
-						<li><a href="#">DISPONIBILIDAD DEL AGUA</a></li>
-						<li><a href="#">PROPIEDADES DEL AGUA</a></li>
+						<li><a href="{{ url('waterCulture/water') }}">EL AGUA</a></li>
+						<li><a href="{{ url('waterCulture/history') }}">HISTORIA DEL AGUA EN CÓRDOBA</a></li>
+						<li><a href="{{ url('waterCulture/worldWaterDay') }}">DÍA MUNDIAL DEL AGUA</a></li>
+						<li><a href="{{ url('waterCulture/availabilityWater') }}">DISPONIBILIDAD DEL AGUA</a></li>
 						<li><a href="#">CLUB DE AQUAMIGOS</a></li>
 						<li><a href="#">AMISTAD CON EL AGUA</a></li>
-						<li><a href="#">TIPS DE AHORRO</a></li>
 					</ul>
 				</li>
 				<li>
