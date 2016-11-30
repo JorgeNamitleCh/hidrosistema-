@@ -45,7 +45,6 @@
 						<li><a href="{{ url('services/services') }}">SERVICIOS</a></li>
 						<li><a href="{{ url('services/formalities') }}">TRAMITES</a></li>
 						<li><a href="{{ url('services/information') }}">INFORMACIÓN</a></li>
-						<li><a href="#">LABORATORIO</a></li>
 					</ul>
 				</li>
 				<li>
@@ -70,7 +69,7 @@
 						<li><a href="{{ url('waterCulture/worldWaterDay') }}">DÍA MUNDIAL DEL AGUA</a></li>
 						<li><a href="{{ url('waterCulture/availabilityWater') }}">DISPONIBILIDAD DEL AGUA</a></li>
 						<li><a href="{{ url('waterCulture/clubAquamigos') }}">CLUB DE AQUAMIGOS</a></li>
-						<li><a href="#">AMISTAD CON EL AGUA</a></li>
+						<li><a href="{{ url('waterCulture/friendship') }}">AMISTAD CON EL AGUA</a></li>
 					</ul>
 				</li>
 				<li>

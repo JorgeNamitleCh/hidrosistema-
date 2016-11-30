@@ -27,13 +27,12 @@
 				<!-- about -->
 				<div class="block block-about-6">
 					<div class="block-cont clearfix">
-						<div class="grid-col grid-col-right grid-col-4">
+						<div class="grid-col grid-col-right grid-col-4 view hm-zoom">
 							<img src="{{ asset('assets/pic/about/antec.jpg') }}" width="370" height="310" alt="">
-							<div class="shadow"></div>
 						</div>
-						<div class="grid-col grid-col-right grid-col-8">
-							<h3>Antecedentes</h3>
-							<p style="text-align: justify;">Con toda seguridad los primeros asentamientos humanos en lo que hoy conocemos cómo la ciudad de Córdoba, se dieron en las proximidades de las márgenes de los Ríos Seco y San Antonio.<br><br>
+						<div class="grid-col grid-col-right grid-col-8 animated zoomIn">
+							<h1 class="text_h2">ANTECEDENTES</h1>
+							<p class="format_text" ;">Con toda seguridad los primeros asentamientos humanos en lo que hoy conocemos cómo la ciudad de Córdoba, se dieron en las proximidades de las márgenes de los Ríos Seco y San Antonio.<br><br>
 La abundancia de agua dio pauta para el crecimiento de las tribus y/o culturas que poblaron las tierras de lo que ahora es el Municipio de Córdoba.<br><br>
 En los años posteriores a la conquista, en los albores del siglo XVII, cuando tan en moda estaba la fundación de villas españolas, se idea crear, en 1618, la Villa de Córdoba en el paraje denominado Quilanco, perteneciente a la Jurisdicción de Zacatepec.<br><br>
 El abastecimiento del vital en la naciente villa se obtenía a través de la canalización de escurrimientos de agua, que era conducida a depósitos ubicados en vecindades o lugares comunes como los tradicionales lavaderos públicos. <br><br>
@@ -46,7 +45,7 @@ El agua de la Laguna es captada de los excedentes que caen hacia el Arroyo Chiqu
 								<a href="#" class="fa fa-facebook-square"></a><!--
 								--><a href="#" class="fa fa-twitter-square"></a><!--
 								--><a href="#" class="fa fa-google-plus-square"></a><!--
-								--><a href="#" class="fa fa-linkedin-square"></a>
+								-->
 							</div>
 						</div>
 					</div>

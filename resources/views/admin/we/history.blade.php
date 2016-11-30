@@ -27,13 +27,13 @@
 				<!-- about -->
 				<div class="block block-about-6">
 					<div class="block-cont clearfix">
-						<div class="grid-col grid-col-left grid-col-4">
+						<div class="grid-col grid-col-left grid-col-4 view hm-zoom animated zoomIn">
 							<img src="{{ asset('assets/pic/about/antec.jpg') }}" width="370" height="310" alt="">
-							<div class="shadow"></div>
+							
 						</div>
-						<div class="grid-col grid-col-right grid-col-8">
-							<h3>Historia</h3>
-							<p style="text-align: justify;">
+						<div class="grid-col grid-col-right grid-col-8 animated zoomIn">
+							<h1 class="text_h2">HISTORIA</h1>
+							<p class="format_text">
 								Con el objeto de satisfacer las necesidades de agua potable y alcantarillado de la población de la ciudad de Córdoba, Ver., en el año de 1976, se crea la Junta Federal de Agua Potable, misma que dependía directamente de la Secretaría de Recursos Hidráulicos.<br><br>
 Posteriormente, en el año de 1982, los servicios de agua potable se descentralizan, dependiendo directamente del Gobierno del Estado de Veracruz, convirtiéndose la Junta Federal de Agua Potable en un organismo estatal denominado Comisión Estatal de Agua Potable y Alcantarillado (CEAPA); misma que en el año de 1985, cambia su nomenclatura, convirtiéndose en Comisión Estatal de Agua y Saneamiento (CEAS).<br><br>
 Es en el año de 1990 cuando el Ejecutivo del Estado emite el Decreto por el cual se expide la Ley Número 72 de Agua y Saneamiento para el Estado de Veracruz-Llave, publicada en la Gaceta Oficial el 5 de junio de 1990 y en la que se establecen los lineamientos bajo los cuales se regirán los servicios de agua potable y alcantarillado en el Estado.<br><br>
@@ -42,8 +42,8 @@ Es en el año de 1990 cuando el Ejecutivo del Estado emite el Decreto por el cua
 						</div>
 					</div>
 					<div class="block-cont clearfix">
-						<div class="grid-col grid-col-left grid-col-11">
-							<p style="text-align: justify;">
+						<div class="grid-col grid-col-left grid-col-11 animated zoomIn">
+							<p class="format_text">
 								
 Es en el año de 1990 cuando el Ejecutivo del Estado emite el Decreto por el cual se expide la Ley Número 72 de Agua y Saneamiento para el Estado de Veracruz-Llave, publicada en la Gaceta Oficial el 5 de junio de 1990 y en la que se establecen los lineamientos bajo los cuales se regirán los servicios de agua potable y alcantarillado en el Estado.<br><br>
 Mediante Decreto del Ejecutivo publicado en la Gaceta Oficial del Estado No. 150, el día 15 de Diciembre de 1990 se crea la Comisión Municipal de Agua Potable y Saneamiento (CMAPS) de Córdoba, Ver., como una entidad descentralizada con personalidad jurídica y patrimonio propios, misma que inicia sus operaciones como tal, en el año de 1992.<br><br>
@@ -66,7 +66,7 @@ Sin embargo, como organismo descentralizado, con personalidad jurídica y patrim
 *Ley Número 668 de Ingresos del Municipio de Córdoba del Estado de Veracruz de Ignacio de la Llave, correspondiente al Ejercicio Fiscal 2007.<br><br>
 Reglamento interior de Hidrosistema
 							</p>
-							<div class="icons">
+							<div class="icons animated zoomIn">
 								<a href="#" class="fa fa-facebook-square"></a><!--
 								--><a href="#" class="fa fa-twitter-square"></a><!--
 								--><a href="#" class="fa fa-google-plus-square"></a><!--

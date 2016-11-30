@@ -713,7 +713,7 @@ noindex:-o-prefocus, .page-header-bottom + div { /* opera hack */
 	position: relative;
 	margin-bottom: 40px;
 	padding-bottom: 38px;
-	border-bottom: 1px solid #2d3e50;
+	border-bottom: 1px solid #1c6fdf;
 	text-align: center;
 }
 .block-head-1 i {
@@ -724,7 +724,7 @@ noindex:-o-prefocus, .page-header-bottom + div { /* opera hack */
 	height: 36px;
 	margin: -18px 0 0 -18px;
 	border-radius: 50%;
-	background: #2d3e50;
+	background: #1c6fdf;
 	box-shadow: 0 0 0 10px #fff;
 	font-size: 18px;
 	line-height: 36px;

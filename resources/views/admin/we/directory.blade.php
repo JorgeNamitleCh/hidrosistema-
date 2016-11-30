@@ -12,7 +12,7 @@
 @section('content')
 	<!-- page intro -->
 	<div class="page-intro">
-		<div class="pic" style="background-image: url({{ asset('assets/pic/intro/number.jpg') }})"></div>
+		<div class="pic" style="background-image: url({{ asset('assets/pic/intro/directorio.png') }})"></div>
 		
 		<div class="grid-row clearfix">
 			<div class="page-title">NOSOTROS</div>
@@ -25,9 +25,9 @@
 	<div class="page-content-section">
 		<div class="grid-row">
 			<!-- services -->
-			<div class="block block-services block-services-3">
+			<div class="block block-services block-services-3 animated zoomIn">
 				<h3>Lineas y extenciones telefónicas</h3>
-				<div class="block-head block-head-1">Números de Atención<i class="fa fa-tint"></i></div>
+				<div class="block-head block-head-1"><h1 class="text_h1">Números de Atención</h1><i class="fa fa-tint"></i></div>
 				<div class="block-cont">
 					<ul>
 						<li>
@@ -55,8 +55,8 @@
 			</div>
 			<!--/ services -->
 		</div>
-		<div class="grid-row">
-			<div class="block-head block-head-1">Extenciones Telefónicas<i class="fa fa-tint"></i></div>
+		<div class="grid-row animated zoomIn">
+			<div class="block-head block-head-1"><h1 class="text_h1">Extenciones Telefónicas</h1><i class="fa fa-tint"></i></div>
 			<div class="col-md-4">
 				<div class="list-group"> 
 					<a href="#" class="list-group-item"> 
@@ -133,6 +133,9 @@
 				</div>
 			</div>
 		</div>
+		<div class="grid-row">
+            <br><br><br>
+        </div>
 	</div>
 	<!--/ page content section -->
 

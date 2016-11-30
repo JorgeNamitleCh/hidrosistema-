@@ -4,23 +4,6 @@
 
 @section('styles')
     @parent
-    <style type="text/css">
-        .format_text{ 
-            text-align: justify; 
-            color: #222; 
-            font-family: 'Open Sans', sans-serif; 
-            font-size: 14px; 
-            font-weight: 400; 
-            line-height: 24px; 
-            margin: 0 0 14px;
-        }
-        .text_h1{
-            color: #F90B6D; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 40px; margin: 0 0 16px;
-        }
-        .text_h2{
-            color: #F90B6D; font-family: 'Open Sans', sans-serif; font-size: 25px; font-weight: 300; line-height: 40px; margin: 0 0 16px;
-        }
-    </style>
 @stop
 
 @section('scrips')
