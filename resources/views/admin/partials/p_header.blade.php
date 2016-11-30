@@ -69,7 +69,7 @@
 						<li><a href="{{ url('waterCulture/history') }}">HISTORIA DEL AGUA EN CÓRDOBA</a></li>
 						<li><a href="{{ url('waterCulture/worldWaterDay') }}">DÍA MUNDIAL DEL AGUA</a></li>
 						<li><a href="{{ url('waterCulture/availabilityWater') }}">DISPONIBILIDAD DEL AGUA</a></li>
-						<li><a href="#">CLUB DE AQUAMIGOS</a></li>
+						<li><a href="{{ url('waterCulture/clubAquamigos') }}">CLUB DE AQUAMIGOS</a></li>
 						<li><a href="#">AMISTAD CON EL AGUA</a></li>
 					</ul>
 				</li>
