@@ -69,3 +69,7 @@ Route::get('/waterCulture/clubAquamigos', function () {
 Route::get('/waterCulture/friendship', function () {
     return view('admin.waterCulture.friendship');
 });
+
+Route::get('waterSanation/sources', function () {
+    return view('admin.waterSanation.sources');
+});

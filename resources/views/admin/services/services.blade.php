@@ -13,7 +13,7 @@
 @section('content')
 	<!-- page intro -->
 	<div class="page-intro">
-		<div class="pic" style="background-image: url({{ asset('assets/pic/intro/services.png') }})"></div>
+		<div class="pic" style="background-image: url({{ asset('assets/pic/intro/services_t.png') }})"></div>
 		
 		<div class="grid-row clearfix">
 			<div class="page-title">SERVICIOS</div>
