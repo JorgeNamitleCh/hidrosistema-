@@ -17,7 +17,7 @@
         <div class="grid-row clearfix">
             <div class="page-title">CULTURA DEL AGUA</div>
             <div class="page-subtitle">DÍA MUNDIAL DEL AGUA</div>
-            <div class="bread-crumbs"><a href="#">Inicio</a> - Día mundial del agua </div>
+            <div class="bread-crumbs"><a href="{{ url('/') }}">Inicio</a> - Día mundial del agua </div>
         </div>
     </div>
     <!--/ page intro -->

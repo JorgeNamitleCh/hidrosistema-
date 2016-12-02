@@ -17,7 +17,7 @@
         <div class="grid-row clearfix">
             <div class="page-title">CULTURA DEL AGUA</div>
             <div class="page-subtitle">CLUB DE AQUAMIGOS</div>
-            <div class="bread-crumbs"><a href="#">Inicio</a> - Club de aquamigos </div>
+            <div class="bread-crumbs"><a href="{{ url('/') }}">Inicio</a> - Club de aquamigos </div>
         </div>
     </div>
     <!--/ page intro -->

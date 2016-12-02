@@ -73,3 +73,27 @@ Route::get('/waterCulture/friendship', function () {
 Route::get('waterSanation/sources', function () {
     return view('admin.waterSanation.sources');
 });
+
+Route::get('waterSanation/desinfection', function () {
+    return view('admin.waterSanation.desinfection');
+});
+
+Route::get('waterSanation/sanitation', function () {
+    return view('admin.waterSanation.sanitation');
+});
+
+Route::get('waterSanation/waterQuality', function () {
+    return view('admin.waterSanation.waterQuality');
+});
+
+Route::get('waterSanation/normativity', function () {
+    return view('admin.waterSanation.normativity');
+});
+
+Route::get('waterSanation/harvest', function () {
+    return view('admin.waterSanation.harvest');
+});
+
+Route::get('contacts/index', function () {
+    return view('admin.contacts.index');
+});

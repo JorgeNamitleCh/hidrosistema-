@@ -32,7 +32,7 @@
 							    <!--Card image-->
 							    <div class="view overlay hm-white-slight">
 							        <img src="{{ asset('assets/pic/backgrounds/trabajos.png') }}" class="img-fluid" alt="">
-							        <a>
+							        <a href="{{ url('waterSanation/sources') }}">
 							            <div class="mask"></div>
 							        </a>
 							    </div>
@@ -78,7 +78,7 @@
 							    <!--Card image-->
 							    <div class="view overlay hm-white-slight">
 							        <img src="{{ asset('assets/pic/backgrounds/cultura.png') }}" class="img-fluid" alt="">
-							        <a>
+							        <a href="{{ url('waterCulture/water') }}">
 							            <div class="mask"></div>
 							        </a>
 							    </div>
@@ -157,7 +157,7 @@
 							<p>usted puede realizar sus pagos en los siguientes establecimientos!</p>
 							<div class="carousel">
 								<div>
-									<a href="#"><img src="{{ asset('assets/pic/clients/item-1.png') }}" width="119" height="90" alt=""></a>
+									<a href=""><img src="{{ asset('assets/pic/clients/item-1.png') }}" width="119" height="90" alt=""></a>
 								</div>
 								<div>
 									<a href="#"><img src="{{ asset('assets/pic/clients/item-2.png') }}" width="120" height="90" alt=""></a>
@@ -197,10 +197,10 @@
 						<div class="block block-mobile-ready">
 							<div class="block-head block-head-2">
 								<div class="social-nav">							
-									<a href="#"><img src="{{ asset('assets/pic/conagua.png') }}" alt="" width="220" height="50" ></a>
-									<a href="#"><img src="{{ asset('assets/pic/caev.png') }}" alt="" width="220" height="20" ></a>
-									<a href="#"><img src="{{ asset('assets/pic/agua.png') }}" alt="" width="220" height="50" ></a>
-									<a href="#"><img src="{{ asset('assets/pic/cordoba.png') }}" alt="" width="220" height="50" ></a>
+									<a href="http://www.gob.mx/conagua"><img src="{{ asset('assets/pic/conagua.png') }}" alt="" width="220" height="50" ></a>
+									<a href="http://www.caev.gob.mx/"><img src="{{ asset('assets/pic/caev.png') }}" alt="" width="220" height="20" ></a>
+									<a href="http://www.agua.org.mx/"><img src="{{ asset('assets/pic/agua.png') }}" alt="" width="220" height="50" ></a>
+									<a href="http://cordoba.gob.mx/"><img src="{{ asset('assets/pic/cordoba.png') }}" alt="" width="220" height="50" ></a>
 								</div>	
 							</div>
 							<div class="block-cont">

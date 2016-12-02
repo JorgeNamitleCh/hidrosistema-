@@ -17,7 +17,7 @@
 		<div class="grid-row clearfix">
 			<div class="page-title">NOSOTROS</div>
 			<div class="page-subtitle">Antecedentes</div>
-			<div class="bread-crumbs"><a href="#">Inicio</a> - Antecedentes </div>
+			<div class="bread-crumbs"><a href="{{ url('/') }}">Inicio</a> - Antecedentes </div>
 		</div>
 	</div>
 	<!--/ page intro -->

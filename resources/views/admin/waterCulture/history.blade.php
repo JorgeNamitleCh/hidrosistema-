@@ -17,7 +17,7 @@
         <div class="grid-row clearfix">
             <div class="page-title">CULTURA DEL AGUA</div>
             <div class="page-subtitle">HISTORIA DEL AGUA EN CÓRDOBA</div>
-            <div class="bread-crumbs"><a href="#">Inicio</a> - Historia </div>
+            <div class="bread-crumbs"><a href="{{ url('/') }}">Inicio</a> - Historia </div>
         </div>
     </div>
     <!--/ page intro -->

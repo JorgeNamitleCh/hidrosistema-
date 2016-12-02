@@ -17,7 +17,7 @@
 		<div class="grid-row clearfix">
 			<div class="page-title">NOSOTROS</div>
 			<div class="page-subtitle">Directorio</div>
-			<div class="bread-crumbs"><a href="#">Inicio</a> - Directorio </div>
+			<div class="bread-crumbs"><a href="{{ url('/') }}">Inicio</a> - Directorio </div>
 		</div>
 	</div>
 	<!--/ page intro -->

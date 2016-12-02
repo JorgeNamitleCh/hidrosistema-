@@ -16,9 +16,9 @@
 		<div class="pic" style="background-image: url({{ asset('assets/pic/intro/tubos.jpg') }})"></div>
 		
 		<div class="grid-row clearfix">
-			<div class="page-title">SERVICIOS</div>
-			<div class="page-subtitle">INFORMACIÓN</div>
-			<div class="bread-crumbs"><a href="#">Inicio</a> - Información </div>
+			<div class="page-title">AGUA Y SANEAMIENTO</div>
+			<div class="page-subtitle">FUENTES DE ABASTECIMIENTO</div>
+			<div class="bread-crumbs"><a href="{{ url('/') }}">Inicio</a> - Fuentes de abastecimiento </div>
 		</div>
 	</div>
 	<!--/ page intro -->

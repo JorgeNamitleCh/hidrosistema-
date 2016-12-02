@@ -17,7 +17,7 @@
         <div class="grid-row clearfix">
             <div class="page-title">CULTURA DEL AGUA</div>
             <div class="page-subtitle">EL AGUA</div>
-            <div class="bread-crumbs"><a href="#">Inicio</a> - El agua </div>
+            <div class="bread-crumbs"><a href="{{ url('/') }}">Inicio</a> - El agua </div>
         </div>
     </div>
     <!--/ page intro -->

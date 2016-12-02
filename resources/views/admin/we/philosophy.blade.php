@@ -18,7 +18,7 @@
 		<div class="grid-row clearfix">
 			<div class="page-title">NOSOTROS</div>
 			<div class="page-subtitle">Filosofía institucional</div>
-			<div class="bread-crumbs"><a href="#">Inicio</a> - Filosofía </div>
+			<div class="bread-crumbs"><a href="{{ url('/') }}">Inicio</a> - Filosofía </div>
 		</div>
 	</div>
 	<!--/ page intro -->

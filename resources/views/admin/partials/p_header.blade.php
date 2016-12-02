@@ -18,7 +18,7 @@
 		
 		<!-- logo -->
 		<div class="logo">
-			<span><a href="index.html"><img src="{{ asset('assets/img/logo.png') }}" ></a></span>
+			<span><a href="{{ url('/') }}"><img src="{{ asset('assets/img/logo.png') }}" ></a></span>
 		</div> 
 		<!--/ logo -->
 		
@@ -50,12 +50,12 @@
 				<li>
 					<a href="#">AGUA Y SANEAMIENTO<i class="fa fa-angle-down"></i></a>
 					<ul>
-						<li><a href="#">FUENTES DE ABASTECIMIENTO</a></li>
-						<li><a href="#">DESINFECCIÓN Y DISTRIBUCIÓN</a></li>
-						<li><a href="#">SANEAMIENTO</a></li>
-						<li><a href="#">CONTROL Y CALIDAD DEL AGUA</a></li>
-						<li><a href="#">NORMATIVIDAD</a></li>
-						<li><a href="#">COSECHA DEL AGUA DE LLUVIA</a></li>
+						<li><a href="{{ url('waterSanation/sources') }}">FUENTES DE ABASTECIMIENTO</a></li>
+						<li><a href="{{ url('waterSanation/desinfection') }}">DESINFECCIÓN Y DISTRIBUCIÓN</a></li>
+						<li><a href="{{ url('waterSanation/sanitation') }}">SANEAMIENTO</a></li>
+						<li><a href="{{ url('waterSanation/waterQuality') }}">CONTROL Y CALIDAD DEL AGUA</a></li>
+						<li><a href="{{ url('waterSanation/normativity') }}">NORMATIVIDAD</a></li>
+						<li><a href="{{ url('waterSanation/harvest') }}">COSECHA DEL AGUA DE LLUVIA</a></li>
 					</ul>
 				</li>
 				<li>
@@ -73,7 +73,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#">CONTACTO</a>
+					<a href="{{ url('contacts/index') }}">CONTACTO</a>
 				</li>
 			</ul>
 		</nav>
