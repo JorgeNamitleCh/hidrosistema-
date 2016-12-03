@@ -97,3 +97,5 @@ Route::get('waterSanation/harvest', function () {
 Route::get('contacts/index', function () {
     return view('admin.contacts.index');
 });
+
+Route::resource('receipt','ReceiptController');
