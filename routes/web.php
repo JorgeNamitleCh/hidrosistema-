@@ -98,6 +98,8 @@ Route::get('contacts/index', function () {
     return view('admin.contacts.index');
 });
 
+
 Route::get('receipts/receipt', function () {
     return view('admin.receipts.receipt');
 });
+
