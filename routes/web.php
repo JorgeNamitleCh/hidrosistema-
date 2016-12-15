@@ -99,7 +99,5 @@ Route::get('contacts/index', function () {
 });
 
 
-Route::get('receipts/receipt', function () {
-    return view('admin.receipts.receipt');
-});
+Route::resource('receipts','ReceiptController');
 

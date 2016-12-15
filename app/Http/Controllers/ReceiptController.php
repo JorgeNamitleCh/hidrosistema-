@@ -1,13 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Concept;
 use App\Contract;
 use App\Measuring;
 use App\Receipt;
 use DB;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class ReceiptController extends Controller
 {
@@ -22,7 +22,7 @@ class ReceiptController extends Controller
         $contracts=Contract::where('status','A')
                             ->where('total','>',0 )
                             ->select(['contrato','nombre','colonia','direccion','tarifa','sector','ruta','folio','medidor','servicio','pagos_ven','total','rfc_u','cve_dren','año','periodo','cons_promedio','direccion_fiscal','colonia_fiscal','cve_ubica','ciudad_fiscal','municipio_fiscal','estado_fiscal','cod_post_fiscal','telefono_fiscal','apellido_pat','apellido_mat','nombres'])
-                            ->limit(10)
+                            ->limit(2)
                             ->get()->toArray();
         $list_contracts=array();
 
@@ -35,7 +35,7 @@ class ReceiptController extends Controller
                         ->get()->toArray();
 
         
-
+                        //dd($receipt);
         $concepts=Concept::where('año',"2016")
                          ->where('periodo',"11")
                          ->where('contrato',$contract['contrato'])
@@ -56,11 +56,19 @@ class ReceiptController extends Controller
         }
        
 
+
         $contract = array_merge($contract, $receipt[0]);
 
-        $barcode='23'.substr($contract['contrato'], -5).$contract['recibo'].'20161229'.str_pad((int)$contract['tot_apagar'], 10, "0", STR_PAD_LEFT).'003';
 
-        $contract['barcode']=$barcode;
+        $barcodeRN='23'.substr($contract['contrato'], -5).$contract['recibo'].Carbon::createFromFormat('d/m/Y',(string)trim($contract['f_vencimiento']))->format('Ymd').str_pad((int)$contract['tot_apagar'], 10, "0", STR_PAD_LEFT).'001';
+
+        $barcodePA='23'.substr($contract['contrato'], -5).$contract['recibo'].Carbon::createFromFormat('d/m/Y',(string)trim($contract['f_vencimiento']))->format('Ymd').str_pad((int)$contract['tot_apagar'], 10, "0", STR_PAD_LEFT).'012';
+
+        $contract['barcode-rn']=$barcodeRN;
+
+        $contract['barcode-pa']=$barcodePA;
+
+       // dd( $contract);
 
         array_push($list_contracts,$contract);
                     
@@ -72,8 +80,8 @@ class ReceiptController extends Controller
         
 
 
-        
-        return view('admin.contracts.receipt', compact('list_contracts'));
+        return view('admin.receipts.receipt', compact('list_contracts'));
+        //return view('admin.contracts.receipt', compact('list_contracts'));
     }
 
     /**

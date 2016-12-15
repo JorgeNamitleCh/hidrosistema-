@@ -7,127 +7,117 @@
         <link rel="shortcut icon" href="favicon"/>  
     </head>  
     <body>
-      <div class="content">
+
+    @foreach ($list_contracts as $contract) 
+      <div class="row">
           <header>  
              <div class="contrato">
-                 <p>1208</p>
+                 <p>{{ (int)$contract["contrato"] }}</p>
              </div>
              <div class="recibo1">
-                 <p>154633</p>
+                 <p>{{ $contract["recibo"] }}</p>
              </div>
 
              <div class="vencim">
-                 <p>29/09/2016</p>
+                 <p>{{ $contract["f_vencimiento"] }}</p>
              </div>
              <div class="mesF">
-                 <p>NOVIEMBRE/16</p>
+                 <p>{{ $contract["periodo"] }}</p>
              </div>
              <div class="medidor">
-                 <p>0125464665</p>
+                 <p>{{ $contract["medidor"] }}</p>
              </div>
 
              <div class="sec">
-                 <p>50</p>
+                 <p>{{ $contract["sector"] }}</p>
              </div>
              <div class="rut">
-                 <p>02</p>
+                 <p>{{ $contract["ruta"] }}</p>
              </div>
              <div class="folio">
-                 <p>564582</p>
+                 <p>{{ $contract["folio"] }}</p>
              </div>
 
              <div class="ant">
-                 <p>5645</p>
+                 <p>
+                   @if(isset($contract['lec_anterior']))
+                    {{ $contract["lec_anterior" ] }}
+                  @endif
+                 </p>
              </div>
              <div class="act">
-                 <p>1245</p>
+                 <p>
+                  @if(isset($contract['lec_actual']))
+                    {{ $contract["lec_actual" ] }}
+                  @endif
+                 </p>
              </div>
              <div class="consm">
-                 <p>4568</p>
+                 <p>                   
+                   @if(isset($contract['consumo']))
+                    {{ $contract["consumo" ] }}
+                  @endif
+                 </p>
              </div>
              <div class="prom">
-                 <p>458</p>
+                 <p>{{ $contract["cons_promedio"] }}</p>
              </div>
              <div class="mrezago">
-                 <p>017</p>
+                 <p>{{ $contract["pagos_ven"] }}</p>
              </div>
 
              <div class="nombre">
-                 <p>JOSÉ JORGE NAMITLE LUCIANO PACHECO DE LA LUZ INFORATICA Y DE GARCIA NORIEGA</p>
+                 <p>{{ $contract["nombre"] }}</p>
              </div>
              <div class="rfc">
-                 <p>J1204FGHE458</p>
+                 <p>
+                    @if(isset($contract['rfc_u']))
+                    {{ $contract["rfc_u" ] }}
+                    @endif
+                 </p>
              </div>
              <div class="tarifa">
-                 <p>POPULAR</p>
+                 <p>{{ $contract["tarifa"] }}</p>
              </div>
              <div class="direcc">
-                 <p>AV TRATADOS DE CORDOBA M.15 L .15  FRACC.  IV MOREZA CUCHARITA TE AMO BUUUU PUENTE</p>
+                 <p>{{ $contract["direccion"].' '.$contract["colonia"] }}</p>
              </div>
              <div class="direccF">
-                 <p>AV TRATADOS DE CORDOBA M.15 L .15  FRACC.  IV MOREZA CUCHARITA</p>
+                 <p>
+                  @if(isset($contract['direccion_fiscal']))
+                    {{ $contract["direccion_fiscal" ] }}
+                  @endif
+
+                  @if(isset($contract['colonia_fiscal']))
+                    {{ $contract["colonia_fiscal" ] }}
+                  @endif
+                  </p>
              </div>
              <div class="ccatastral">
-                 <p>06-045-001-11-065-008-00-000-1</p>
+                 <p>
+                 @if(isset($contract['cve_ubica']))
+                    {{ $contract["cve_ubica" ] }}
+                 @endif
+                 </p>
              </div>
         </header>  
 
         <section>
             <table class="t1">
-                <tr>
-                  <td>CONSUMO MEDIDO</td>
-                  <td >Jackson</td>
-                  <td>94458.78</td>
-                </tr>
-                <tr>
-                  <td>CONSUMO MEDIDO</td>
-                  <td>Jackson</td>
-                  <td>94</td>
-                </tr>
-                <tr>
-                  <td>CONSUMO MEDIDO</td>
-                  <td>Doe</td>
-                  <td>80</td>
-                </tr>
-                <tr>
-                  <td>CONSUMO MEDIDO</td>
-                  <td>Doe</td>
-                  <td>80</td>
-                </tr>
-                <tr>
-                  <td>CONSUMO MEDIDO</td>
-                  <td>Doe</td>
-                  <td>80</td>
-                </tr>
-                <tr>
-                  <td>CONSUMO MEDIDO</td>
-                  <td>Doe</td>
-                  <td>80</td>
-                </tr>
-                <tr>
-                  <td>CONSUMO MEDIDO</td>
-                  <td>Doe</td>
-                  <td>80</td>
-                </tr>
-                <tr>
-                  <td>CONSUMO MEDIDO</td>
-                  <td>Doe</td>
-                  <td>80</td>
-                </tr>
-                <tr>
-                  <td>CONSUMO MEDIDO</td>
-                  <td>Doe</td>
-                  <td>80</td>
-                </tr>
-                <tr>
-                  <td>CONSUMO MEDIDO</td>
-                  <td>Doe</td>
-                  <td>80</td>
-                </tr>
+                @foreach ($contract['conceptos'] as $concept)
+                      <tr>
+                        <td>{{  $concept['concepto'] }}</td>
+                        <td>{{  $concept['importe_a'] }}</td>
+                        <td>{{  $concept['importe_v'] }}</td>
+                      </tr>
+                @endforeach
             </table>  
            
             <div class="fact">FACTURACIÓN 2016</div>
-            <div class="total1">10,568.22</div>
+            <div class="total1">
+                  @if(isset($contract['tot_apagar']))
+                    {{ $contract["tot_apagar" ] }}
+                  @endif</div>
             <div class="logo_mes">
             <img class="logo_m" src="{{ asset('assets/img/receipt/mes_recib.png') }}">
             </div>
@@ -135,141 +125,81 @@
 
         <aside>  
            <table class="t2">
-              <tr>
-                <td>02</td>
-                <td >125445.00</td>
-                <td>94458.78</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>152</td>
-                <td>94</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>423</td>
-                <td>80</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>458</td>
-                <td>80</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>458</td>
-                <td>80</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>458</td>
-                <td>80</td>
-              </tr>
+              @foreach ($contract['conceptos'] as $concept)
+                      <tr>
+                        <td>{{  $concept['concepto'] }}</td>
+                        <td>{{  $concept['importe_a'] }}</td>
+                        <td>{{  $concept['importe_v'] }}</td>
+                      </tr>
+                @endforeach
           </table>
 
-          <div class="total2">10,568.22</div>
-          <div class="recibo2">789654</div> 
+          <div class="total2">
+                  @if(isset($contract['tot_apagar']))
+                    {{ $contract["tot_apagar" ] }}
+                  @endif
+          </div>
+          <div class="recibo2">
+                  @if(isset($contract['recibo']))
+                    {{ $contract["recibo" ] }}
+                  @endif
+          </div> 
         </aside>  
         <footer> 
           <table class="t3">
-              <tr>
-                <td>02</td>
-                <td >125445.00</td>
-                <td>94458.78</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>152</td>
-                <td>94</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>423</td>
-                <td>80</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>458</td>
-                <td>80</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>458</td>
-                <td>80</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>458</td>
-                <td>80</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>458</td>
-                <td>80</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>458</td>
-                <td>80</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>458</td>
-                <td>80</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>456</td>
-                <td>80</td>
-              </tr>
+              @foreach ($contract['conceptos'] as $concept)
+                      <tr>
+                        <td>{{  $concept['concepto'] }}</td>
+                        <td>{{  $concept['importe_a'] }}</td>
+                        <td>{{  $concept['importe_v'] }}</td>
+                      </tr>
+                @endforeach
           </table>
-          <div class="totalFA">100,002.02</div>
+          <div class="totalFA">
+                  @if(isset($contract['tot_apagar']))
+                    {{ $contract["tot_apagar" ] }}
+                  @endif
+          </div>
           <table class="t4">
-              <tr>
-                <td>02</td>
-                <td >125445.00</td>
-                <td>94458.78</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>152</td>
-                <td>94</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>423</td>
-                <td>80</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>458</td>
-                <td>80</td>
-              </tr>
+              @foreach ($contract['conceptos'] as $concept)
+                      <tr>
+                        <td>{{  $concept['concepto'] }}</td>
+                        <td>{{  $concept['importe_a'] }}</td>
+                        <td>{{  $concept['importe_v'] }}</td>
+                      </tr>
+                @endforeach
           </table>
-          <div class="totalPA">100,002.02</div>
+          <div class="totalPA">1
+                  @if(isset($contract['tot_apagar']))
+                    {{ $contract["tot_apagar" ] }}
+                  @endif</div>
 
-          <div class="tContrato"><p>125485</p></div>
-          <div class="tRecibo"><p>125485</p></div>
-          <div class="tSec"><p>485</p></div>
-          <div class="tRut"><p>485</p></div>
-          <div class="tFol"><p>485</p></div>
-          <div class="tVen"><p>48/02/2568</p></div>
+          <div class="tContrato"><p>{{ (int)$contract["contrato"] }}</p></div>
+          <div class="tRecibo"><p>{{ $contract["recibo"] }}</p></div>
+          <div class="tSec"><p>{{ $contract["sector"] }}</p></div>
+          <div class="tRut"><p>{{ $contract["ruta"] }}</p></div>
+          <div class="tFol"><p>{{ $contract["folio"] }}</p></div>
+          <div class="tVen"><p>{{ $contract["f_vencimiento"] }}</p></div>
           
-          <div class="tContrato2"><p>125485</p></div>
-          <div class="tRecibo2"><p>125485</p></div>
-          <div class="tSec2"><p>485</p></div>
-          <div class="tRut2"><p>485</p></div>
-          <div class="tFol2"><p>485</p></div>
-          <div class="tVen2"><p>48/02/2568</p></div>
+          <div class="tContrato2"><p>{{ (int)$contract["contrato"] }}</p></div>
+          <div class="tRecibo2"><p>{{ $contract["recibo"] }}</p></div>
+          <div class="tSec2"><p>{{ $contract["sector"] }}</p></div>
+          <div class="tRut2"><p>{{ $contract["ruta"] }}</p></div>
+          <div class="tFol2"><p>{{ $contract["folio"] }}</p></div>
+          <div class="tVen2"><p>{{ $contract["f_vencimiento"] }}</p></div>
 
           <div class="barcode">
-            <img  class="barcode" src="{{ asset('assets/img/receipt/barcode.png') }}" alt="">
+            {{ $contract["barcode-rn"] }}
           </div>
 
           <div class="barcode2">
-            <img  class="barcode" src="{{ asset('assets/img/receipt/barcode.png') }}" alt="">
+            {{ $contract["barcode-pa"] }}
           </div>
         </footer>  
-      </div> 
+      </div>
+      <div style="page-break-after: always;">
+      </div>
+
+    @endforeach 
     </body>  
 </html>  
